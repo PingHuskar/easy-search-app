@@ -2,8 +2,8 @@ body {
     background-color: #888;
 }
 img {
-    width: 18vh;
-    height: 9vw;
+    width: 16vh;
+    height: 8vw;
     opacity: 0.4;
     transform: scale(0.6);
 }

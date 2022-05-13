@@ -17,8 +17,8 @@ $("img").mouseenter(function() {
     $("#log").html(this.getAttribute('id')).css('display','block')
 })
 $("img").mouseleave(function() {
-    $("#log").html('').css({
-        'display':'inherit'
+    $("#log").html('...').css({
+        'display':'block'
     })
 })
 $("img").click(function(){
