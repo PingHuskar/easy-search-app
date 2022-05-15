@@ -2,7 +2,7 @@ var log = []
 
 function main() {
     function opens(web) {
-        if (document.getElementById(web).getAttribute('class') === 'clicked') {
+        if (/(round\s)?clicked/.test(document.getElementById(web).getAttribute('class'))) {
             open(document.getElementById(web).getAttribute('url')+document.getElementById('search').value);
         }
     }
