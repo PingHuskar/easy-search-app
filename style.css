@@ -12,6 +12,14 @@ img:hover {
   border: lightgreen solid 5px;
   transform: scale(0.8);
 }
+.sidebar a.active {
+  font-weight: bold;
+  background-color: #FFF;
+}
+.sidebar a:first-letter {
+  font-size: 40px;
+  text-transform: capitalize;
+} 
 .container {
     /* flex-direction: row;
     justify-content: center;

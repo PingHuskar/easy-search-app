@@ -9,7 +9,8 @@ function main() {
     }
     var ids = ["udemy","udemy_mycourse","google","github_all","github_myrepo","youtube",
     "iqiyi","imdb","applemusic","hareshi","stackoverflow","th.wikipedia","forms","sheets",
-    "slides","datastudio","drive","steam","alternativeto","th1lib","goodreads"]
+    "slides","datastudio","drive","steam","alternativeto","th1lib","goodreads",
+    "central","shopee","lazada","7eleven","kaidee","w3schools","PatiphanPhengpao"]
     ids.map(opens)
 }
 // const element = document.querySelector('img');
@@ -57,7 +58,27 @@ function movie() {
     $(".anime").show().addClass("clicked")
 }
 
+function music() {
+    $("img").hide().removeClass("clicked")
+    $(".music").show().addClass("clicked")
+}
+
 function book() {
     $("img").hide().removeClass("clicked")
     $(".book").show().addClass("clicked")
+}
+
+function shop() {
+    $("img").hide().removeClass("clicked")
+    $(".shop").show().addClass("clicked")
+}
+
+function other() {
+    $("img").hide().removeClass("clicked")
+    $(".other").show().addClass("clicked")
+}
+
+function coding() {
+    $("img").hide().removeClass("clicked")
+    $(".coding").show().addClass("clicked")
 }

@@ -12,24 +12,27 @@
 </head>
 <body>
 	<div id="mySidebar" class="sidebar">
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-	  <a href="#" onclick="showall()">All</a>
-	  <a href="#" onclick="google()">Google</a>
-	  <a href="#" onclick="movie()">Movie + Anime</a>
-	  <a href="#">Music</a>
-	  <a href="#" onclick="book()">Book</a>
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav();document.getElementById('openbtn').style.display='initial'">×</a>
+	  <a href="#" class="active" onclick="showall();$('.sidebar a').removeClass('active');$(this).addClass('active');">All</a>
+	  <a href="#" onclick="coding();$('.sidebar a').removeClass('active');$(this).addClass('active');">coding</a>
+	  <a href="#" onclick="google();$('.sidebar a').removeClass('active');$(this).addClass('active');">Google</a>
+	  <a href="#" onclick="movie();$('.sidebar a').removeClass('active');$(this).addClass('active');">Movie + Anime</a>
+	  <a href="#" onclick="music();$('.sidebar a').removeClass('active');$(this).addClass('active');">Music</a>
+	  <a href="#" onclick="book();$('.sidebar a').removeClass('active');$(this).addClass('active');">Book</a>
+	  <a href="#" onclick="shop();$('.sidebar a').removeClass('active');$(this).addClass('active');">Shop</a>
+	  <a href="#" onclick="other();$('.sidebar a').removeClass('active');$(this).addClass('active');">other</a>
 	</div>
 	<div id="main">
-	  <button class="openbtn" onclick="openNav()">☰</button>
+	  <button class="openbtn" id="openbtn" style="display:none" onclick="openNav();this.style.display='none';">☰</button>
 	</div>
 	<h2 id="log"></h2>
 	<div class="container">
 		<img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" url="https://www.udemy.com/courses/search/?src=ukw&q=" class="learning round" id="udemy" alt="udemy">
 		<img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" url="https://www.udemy.com/home/my-courses/search/?q=" class="learning round" id="udemy_mycourse" alt="udemy">
 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/120px-Google_%22G%22_Logo.svg.png" url="https://www.google.com/search?q=" class="round" id="google" alt="google">
-		<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" url="https://github.com/search?q=" class="learning round" id="github_all" alt="github">
-		<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" url="https://github.com/search?q=user%3APingHuskar+" class="learning round"  id="github_myrepo" alt="github">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" url="https://www.youtube.com/results?search_query=" class="video round" id="youtube" alt="youtube">
+		<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" url="https://github.com/search?q=" class="coding learning round" id="github_all" alt="github">
+		<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" url="https://github.com/search?q=user%3APingHuskar+" class="coding learning round"  id="github_myrepo" alt="github">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" url="https://www.youtube.com/results?search_query=" class="music video round" id="youtube" alt="youtube">
 		<img src="https://yt3.ggpht.com/Ur-t4Q9GRF-7998vH4QOeiarQgfn98uBSA5cpu4Fa6QOrz2hvdOmQ8szBRlOk0RZqL1D1Ef7" url="https://www.iq.com/search?query=" class="anime round" id="iqiyi" alt="iqiyi">
 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/IMDb_Logo_Square.svg/2048px-IMDb_Logo_Square.svg.png" url="https://www.imdb.com/find?q=ff" class="movie round" id="imdb" alt="imdb">
 		<img src="https://music.apple.com/assets/favicon/favicon-180-f10a76334177ea08c0b3b35b0269fe16.png" url="https://music.apple.com/us/search?term=" class="music" id="applemusic" alt="applemusic">
@@ -48,13 +51,13 @@
 		<img src="https://en.th1lib.org/favicon.svg" url="https://en.th1lib.org/s/" class="book round" id="th1lib" alt="th1lib">
 		<img src="https://symbols.getvecta.com/stencil_73/82_alternativeto-icon.6f55025078.jpg" url="https://alternativeto.net/browse/search/?q=" class="other round" id="alternativeto" alt="alternativeto">
 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Goodreads_logo_-_SuperTinyIcons.svg/800px-Goodreads_logo_-_SuperTinyIcons.svg.png" url="https://www.goodreads.com/search?q=" class="book round" id="goodreads" alt="goodreads ">
-		<!-- <img src="" url="" id="" alt=""> -->
-		<!-- <img src="" url="" id="" alt=""> -->
-		<!-- <img src="" url="" id="" alt=""> -->
-		<!-- <img src="" url="" id="" alt=""> -->
-		<!-- <img src="" url="" id="" alt=""> -->
-		<!-- <img src="" url="" id="" alt=""> -->
-		<!-- <img src="" url="" id="" alt=""> -->
+		<img src="https://www.central.co.th/themes/cds/public/apple-touch-icon.png" url="https://www.central.co.th/en/search/" class="shop round" id="central" alt="central">
+		<img src="" url="https://shopee.co.th/search?keyword=" class="shop round" id="shopee" alt="shopee">
+		<img src="https://laz-img-cdn.alicdn.com/tfs/TB1ODo.f2b2gK0jSZK9XXaEgFXa-64-64.png" url="https://www.lazada.co.th/catalog/?q=" class="shop round" id="lazada" alt="lazada">
+		<img src="https://www.allonline.7eleven.co.th/d82df2b11452f4e509a955781c2722fb9abec402/assets/7online/images/icon/touch-icon57.png" url="https://www.allonline.7eleven.co.th/search/?q=" class="shop round" id="7eleven" alt="7eleven">
+		<img src="https://ast.kaidee.com/blackpearl/_static/images/shared/logos/kaidee.svg" url="https://www.kaidee.com/browse?q=" class="shop round" id="kaidee" alt="kaidee">
+		<img src="https://www.w3schools.com/images/w3schools_logo_436_2.png" url="https://www.google.com/search?q=w3schools+" class="coding learning round" id="w3schools" alt="w3schools">
+		<img src="https://yt3.ggpht.com/_gNGTYjOYnvnJT0i4XapTpMdTZ8HsSWZfqjqQUivHfOjF6J46zK9BASNF-GvukeUu69pr92aPQ" url="https://www.youtube.com/c/PatiphanPhengpao/search?query=" class="coding learning round" id="PatiphanPhengpao" alt="PatiphanPhengpao">
 		<!-- <img src="" url="" id="" alt=""> -->
 	</div>
 	<div class="page" style="margin-top: 3vh;margin-bottom: 1vh;">
