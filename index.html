@@ -11,32 +11,43 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div id="mySidebar" class="sidebar">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+	  <a href="#" onclick="showall()">All</a>
+	  <a href="#" onclick="google()">Google</a>
+	  <a href="#" onclick="movie()">Movie + Anime</a>
+	  <a href="#">Music</a>
+	  <a href="#" onclick="book()">Book</a>
+	</div>
+	<div id="main">
+	  <button class="openbtn" onclick="openNav()">☰</button>
+	</div>
 	<h2 id="log"></h2>
 	<div class="container">
-		<img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" url="https://www.udemy.com/courses/search/?src=ukw&q=" id="udemy" alt="udemy">
-		<img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" url="https://www.udemy.com/home/my-courses/search/?q=" id="udemy_mycourse" alt="udemy">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/120px-Google_%22G%22_Logo.svg.png" url="https://www.google.com/search?q=" id="google" alt="google">
-		<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" url="https://github.com/search?q=" class="round" id="github_all" alt="github">
-		<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" url="https://github.com/search?q=user%3APingHuskar+" class="round" id="github_myrepo" alt="github">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" url="https://www.youtube.com/results?search_query=" id="youtube" alt="youtube">
-		<img src="https://yt3.ggpht.com/Ur-t4Q9GRF-7998vH4QOeiarQgfn98uBSA5cpu4Fa6QOrz2hvdOmQ8szBRlOk0RZqL1D1Ef7" url="https://www.iq.com/search?query=" class="round" id="iqiyi" alt="iqiyi">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/IMDb_Logo_Square.svg/2048px-IMDb_Logo_Square.svg.png" url="https://www.imdb.com/find?q=ff" class="round" id="imdb" alt="imdb">
-		<img src="https://music.apple.com/assets/favicon/favicon-180-f10a76334177ea08c0b3b35b0269fe16.png" url="https://music.apple.com/us/search?term=" id="applemusic" alt="applemusic">
+		<img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" url="https://www.udemy.com/courses/search/?src=ukw&q=" class="learning round" id="udemy" alt="udemy">
+		<img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" url="https://www.udemy.com/home/my-courses/search/?q=" class="learning round" id="udemy_mycourse" alt="udemy">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/120px-Google_%22G%22_Logo.svg.png" url="https://www.google.com/search?q=" class="round" id="google" alt="google">
+		<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" url="https://github.com/search?q=" class="learning round" id="github_all" alt="github">
+		<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" url="https://github.com/search?q=user%3APingHuskar+" class="learning round"  id="github_myrepo" alt="github">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" url="https://www.youtube.com/results?search_query=" class="video round" id="youtube" alt="youtube">
+		<img src="https://yt3.ggpht.com/Ur-t4Q9GRF-7998vH4QOeiarQgfn98uBSA5cpu4Fa6QOrz2hvdOmQ8szBRlOk0RZqL1D1Ef7" url="https://www.iq.com/search?query=" class="anime round" id="iqiyi" alt="iqiyi">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/IMDb_Logo_Square.svg/2048px-IMDb_Logo_Square.svg.png" url="https://www.imdb.com/find?q=ff" class="movie round" id="imdb" alt="imdb">
+		<img src="https://music.apple.com/assets/favicon/favicon-180-f10a76334177ea08c0b3b35b0269fe16.png" url="https://music.apple.com/us/search?term=" class="music" id="applemusic" alt="applemusic">
 		
-		<img src="https://www.hareshi.net/apple-touch-icon.png" url="https://www.hareshi.net/browse/anime?text=" id="hareshi" alt="hareshi">
-		<br>
-		<img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png" url="https://stackoverflow.com/search?q=" id="stackoverflow" alt="stackoverflow">
+		<img src="https://www.hareshi.net/apple-touch-icon.png" url="https://www.hareshi.net/browse/anime?text=" class="anime" id="hareshi" alt="hareshi">
+		<img src="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png" url="https://stackoverflow.com/search?q=" class="coding round" id="stackoverflow" alt="stackoverflow">
 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Wikipedia-logo-v2-th.svg/892px-Wikipedia-logo-v2-th.svg.png" url="https://th.wikipedia.org/w/index.php?search=" id="th.wikipedia" alt="th.wikipedia">
 		
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Google_Forms_logo_%282014-2020%29.svg/1489px-Google_Forms_logo_%282014-2020%29.svg.png" url="https://docs.google.com/forms/u/0/?q=" id="forms" alt="forms">
-		<img src="https://seeklogo.com/images/G/google-sheets-logo-70C2B2CA6A-seeklogo.com.png" url="https://docs.google.com/spreadsheets/u/0/?q=" id="sheets" alt="sheets">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Google_Slides_logo_%282014-2020%29.svg/1489px-Google_Slides_logo_%282014-2020%29.svg.png" url="https://docs.google.com/presentation/u/0/?q=" id="slides" alt="slides">
-		<img src="https://www.gstatic.com/analytics-suite/header/suite/v2/ic_data_studio.svg" url="https://datastudio.google.com/u/0/navigation/reporting?search=" id="datastudio" alt="datastudio">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Google_Forms_logo_%282014-2020%29.svg/1489px-Google_Forms_logo_%282014-2020%29.svg.png" url="https://docs.google.com/forms/u/0/?q=" class="google" id="forms" alt="forms">
+		<img src="https://seeklogo.com/images/G/google-sheets-logo-70C2B2CA6A-seeklogo.com.png" url="https://docs.google.com/spreadsheets/u/0/?q=" class="google" id="sheets" alt="sheets">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Google_Slides_logo_%282014-2020%29.svg/1489px-Google_Slides_logo_%282014-2020%29.svg.png" url="https://docs.google.com/presentation/u/0/?q=" class="google" id="slides" alt="slides">
+		<img src="https://www.gstatic.com/analytics-suite/header/suite/v2/ic_data_studio.svg" url="https://datastudio.google.com/u/0/navigation/reporting?search=" class="google" id="datastudio" alt="datastudio">
 		
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/1147px-Google_Drive_icon_%282020%29.svg.png" url="https://drive.google.com/drive/search?q=" id="drive" alt="drive">
-		<img src="https://store.steampowered.com/favicon.ico" url="https://store.steampowered.com/search/?term=" id="steam" alt="steam">
-		<img src="https://en.th1lib.org/favicon.svg" url="https://en.th1lib.org/s/" id="th1lib" alt="th1lib">
-		<img src="https://symbols.getvecta.com/stencil_73/82_alternativeto-icon.6f55025078.jpg" url="https://alternativeto.net/browse/search/?q=" id="alternativeto" alt="alternativeto">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/1147px-Google_Drive_icon_%282020%29.svg.png" url="https://drive.google.com/drive/search?q=" class="google" id="drive" alt="drive">
+		<img src="https://store.steampowered.com/favicon.ico" url="https://store.steampowered.com/search/?term=" class="game round" id="steam" alt="steam">
+		<img src="https://en.th1lib.org/favicon.svg" url="https://en.th1lib.org/s/" class="book round" id="th1lib" alt="th1lib">
+		<img src="https://symbols.getvecta.com/stencil_73/82_alternativeto-icon.6f55025078.jpg" url="https://alternativeto.net/browse/search/?q=" class="other round" id="alternativeto" alt="alternativeto">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Goodreads_logo_-_SuperTinyIcons.svg/800px-Goodreads_logo_-_SuperTinyIcons.svg.png" url="https://www.goodreads.com/search?q=" class="book round" id="goodreads" alt="goodreads ">
 		<!-- <img src="" url="" id="" alt=""> -->
 		<!-- <img src="" url="" id="" alt=""> -->
 		<!-- <img src="" url="" id="" alt=""> -->
