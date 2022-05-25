@@ -30,7 +30,7 @@ img:hover {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
+    display: block;
     /* margin-top: 20vh; */
     background-color: #999;
     border-radius: 2rem;

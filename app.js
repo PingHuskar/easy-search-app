@@ -2,15 +2,18 @@ var log = []
 $("img").hide()
 openNav()
 function main() {
+    var t = document.getElementsByTagName('img')
+    var ids = []
+    for (let i = 0;i < t.length; i++) {
+        ids.push(t[i]['id'])
+    }
+    console.log(ids)
     function opens(web) {
         if (/.*clicked$/.test(document.getElementById(web).getAttribute('class'))) {
             open(document.getElementById(web).getAttribute('url')+document.getElementById('search').value);
         }
+        
     }
-    var ids = ["udemy","udemy_mycourse","google","github_all","github_myrepo","youtube",
-    "iqiyi","imdb","applemusic","hareshi","stackoverflow","th.wikipedia","forms","sheets",
-    "slides","datastudio","drive","steam","alternativeto","th1lib","goodreads",
-    "central","shopee","lazada","7eleven","kaidee","w3schools","PatiphanPhengpao"]
     ids.map(opens)
 }
 // const element = document.querySelector('img');
@@ -81,4 +84,8 @@ function other() {
 function coding() {
     $("img").hide().removeClass("clicked")
     $(".coding").show().addClass("clicked")
+}
+function facebookpage() {
+    $("img").hide().removeClass("clicked")
+    $(".data").show().addClass("clicked")
 }
