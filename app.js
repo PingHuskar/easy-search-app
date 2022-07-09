@@ -45,47 +45,58 @@ function closeNav() {
 function showall() {
     $("img").show().removeClass("clicked")
 }
-
-function template() {
+function rmClick(thisObj) {
+    $('.sidebar a').removeClass('active');$(thisObj).addClass('active');
+    closeNav();document.getElementById('openbtn').style.display='initial'
+}
+function hideRmClicked(){
     $("img").hide().removeClass("clicked")
+}
+function template() {
+    hideRmClicked()
     $("ppp").show().addClass("clicked")
 }
 function google() {
-    $("img").hide().removeClass("clicked")
+    hideRmClicked()
     $(".google").show()
 }
 function movie() {
-    $("img").hide().removeClass("clicked")
+    hideRmClicked()
     $(".video").show()
     $(".movie").show()
     $(".anime").show().addClass("clicked")
 }
 
 function music() {
-    $("img").hide().removeClass("clicked")
+    hideRmClicked()
     $(".music").show().addClass("clicked")
 }
 
 function book() {
-    $("img").hide().removeClass("clicked")
+    hideRmClicked()
     $(".book").show().addClass("clicked")
 }
 
 function shop() {
-    $("img").hide().removeClass("clicked")
+    hideRmClicked()
     $(".shop").show().addClass("clicked")
 }
 
 function other() {
-    $("img").hide().removeClass("clicked")
+    hideRmClicked()
     $(".other").show().addClass("clicked")
 }
 
 function coding() {
-    $("img").hide().removeClass("clicked")
+    hideRmClicked()
     $(".coding").show().addClass("clicked")
 }
 function facebookpage() {
-    $("img").hide().removeClass("clicked")
+    hideRmClicked()
     $(".data").show().addClass("clicked")
+}
+
+function timerpage() {
+    hideRmClicked()
+    $(".timer").show().addClass("clicked")
 }

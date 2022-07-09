@@ -13,15 +13,16 @@
 <body>
 	<div id="mySidebar" class="sidebar">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav();document.getElementById('openbtn').style.display='initial'">×</a>
-	  <a href="#" class="active" onclick="showall();$('.sidebar a').removeClass('active');$(this).addClass('active');">All</a>
-	  <a href="#" onclick="coding();$('.sidebar a').removeClass('active');$(this).addClass('active');">coding</a>
-	  <a href="#" onclick="google();$('.sidebar a').removeClass('active');$(this).addClass('active');">Google</a>
-	  <a href="#" onclick="movie();$('.sidebar a').removeClass('active');$(this).addClass('active');">Movie + Anime</a>
-	  <a href="#" onclick="music();$('.sidebar a').removeClass('active');$(this).addClass('active');">Music</a>
-	  <a href="#" onclick="book();$('.sidebar a').removeClass('active');$(this).addClass('active');">Book</a>
-	  <a href="#" onclick="shop();$('.sidebar a').removeClass('active');$(this).addClass('active');">Shop</a>
-	  <a href="#" onclick="other();$('.sidebar a').removeClass('active');$(this).addClass('active');">other</a>
-	  <a href="#" onclick="facebookpage();$('.sidebar a').removeClass('active');$(this).addClass('active');">facebook</a>
+	  <a href="#" class="active" onclick="showall();rmClick(this);">All</a>
+	  <a href="#" onclick="coding();rmClick(this);">coding</a>
+	  <a href="#" onclick="google();rmClick(this);">Google</a>
+	  <a href="#" onclick="movie();rmClick(this);">Movie + Anime</a>
+	  <a href="#" onclick="music();rmClick(this);">Music</a>
+	  <a href="#" onclick="book();rmClick(this);">Book</a>
+	  <a href="#" onclick="shop();rmClick(this);">Shop</a>
+	  <a href="#" onclick="timerpage();rmClick(this);">timer</a>
+	  <a href="#" onclick="facebookpage();rmClick(this);">facebook</a>
+	  <a href="#" onclick="other();rmClick(this);">other</a>
 	</div>
 	<div id="main">
 	  <button class="openbtn" id="openbtn" style="display:none" onclick="openNav();this.style.display='none';">☰</button>
@@ -34,7 +35,7 @@
 		<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" url="https://github.com/search?q=" class="coding learning round" id="github_all" alt="github">
 		<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" url="https://github.com/search?q=user%3APingHuskar+" class="coding learning round"  id="github_myrepo" alt="github">
 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" url="https://www.youtube.com/results?search_query=" class="music video round" id="youtube" alt="youtube">
-		<img src="https://yt3.ggpht.com/Ur-t4Q9GRF-7998vH4QOeiarQgfn98uBSA5cpu4Fa6QOrz2hvdOmQ8szBRlOk0RZqL1D1Ef7" url="https://www.iq.com/search?query=" class="anime round" id="iqiyi" alt="iqiyi">
+		<img src="https://play-lh.googleusercontent.com/L40FnQ8nF8zRtUdALz9b23JirsxYA5-0_fkRUlFBMymud09ctBCFrNui4l-ES_V6Uw" url="https://www.iq.com/search?query=" class="anime round" id="iqiyi" alt="iqiyi">
 		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/IMDb_Logo_Square.svg/2048px-IMDb_Logo_Square.svg.png" url="https://www.imdb.com/find?q=ff" class="movie round" id="imdb" alt="imdb">
 		<img src="https://music.apple.com/assets/favicon/favicon-180-f10a76334177ea08c0b3b35b0269fe16.png" url="https://music.apple.com/us/search?term=" class="music" id="applemusic" alt="applemusic">
 		
@@ -70,7 +71,8 @@
 		<img src="https://yt3.ggpht.com/ytc/AAUvwngE34WCBT407-QaId9McIVbcFccGcJWxfNE9EvDNw" url="https://www.facebook.com/page/borntodev/search/?q=" class="data facebook round" id="borntodev" alt="borntodev">
 		<img src="https://yt3.ggpht.com/ytc/AAUvwng76HbN6mWvHC7lsfTQyLjsPU_ud5gRp0iT7PG5Vg" url="https://www.facebook.com/page/bigdatarpg/search/?q=" class="data facebook round" id="bigdatarpg" alt="bigdatarpg">
 		<img src="https://stackpython.co/static/blog/img/stp.png" url="https://www.facebook.com/page/Stackpython-110041290379079/search/?q=" class="data facebook round" id="Stackpython" alt="Stackpython">
-		<!-- <img src="" url="" class="facebook round" id="" alt=""> -->
+		<img src="https://lovevolutionbi.com/app/timeboard/images/countdown.png" url="https://lovevolutionbi.com/app/timeboard/timeboard.php?boardID=" class="timer round" id="loveTimer" alt="">
+		<img src="https://lovevolutionbi.com/app/timeboard/images/countdown.png" url="https://lovevolutionbi.com/app/timeboard/timeboard_setting.php?boardID=" class="timer round" id="loveTimerSetting" alt="">
 		<!-- <img src="" url="" class="facebook round" id="" alt=""> -->
 		<!-- <img src="" url="" class="round" id="" alt=""> -->
 		<!-- <img src="" url="" class="round" id="" alt=""> -->
