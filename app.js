@@ -1,6 +1,5 @@
 var log = []
 $("img").hide()
-openNav()
 function main() {
     var t = document.getElementsByTagName('img')
     var ids = []
@@ -33,22 +32,6 @@ $("img").click(function(){
     $(this).toggleClass('clicked')
 });
 
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-function showall() {
-    $("img").show().removeClass("clicked")
-}
-function rmClick(thisObj) {
-    $('.sidebar a').removeClass('active');$(thisObj).addClass('active');
-    closeNav();document.getElementById('openbtn').style.display='initial'
-}
 function hideRmClicked(){
     $("img").hide().removeClass("clicked")
 }

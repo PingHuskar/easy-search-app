@@ -1,11 +1,28 @@
 body {
     background-color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+form {
+  all: unset;
+}
+
 img {
     width: 16vh;
     height: 8vw;
     opacity: 0.4;
     transform: scale(0.6);
+}
+.offcanvas-body {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-bottom: 20vh;
+}
+.offcanvas-body button {
+  width: 100%;
 }
 img:hover {
   opacity: 0.6;
@@ -44,7 +61,7 @@ img:hover {
     background-color: white;
     transform: scale(1) !important;
 }
-button {
+/* button {
     max-width: 100%;
     width: 30%;
     height: 4vh;
@@ -62,7 +79,7 @@ button:hover {
     transform: scaleX(2) scaleY(2);
     transition-duration: 500ms;
     transition-delay: .2s;
-}
+} */
 #log {
   text-transform: capitalize;
   margin-top: 5vh;
